@@ -1,7 +1,7 @@
 /**
- * Coin-toss game with win-loss count.
+ * Coin-toss game with win-loss count and multiple coins.
  * @author Natalie Williams
- * @version 1.4
+ * @version 1.5
  */
 package coinGame.GUI;
 
@@ -30,6 +30,7 @@ import java.awt.SystemColor;
 
 public class CoinScreen {
 	private Random randGen = new Random();
+	private int coinType;	// Type of coin displayed.
 	private int coinFace;	// Which face is facing up. 0 = Heads 1 = Tails
 	private int wins = 0;	// Number of times the player won.
 	private int losses = 0;	// Number of times the player lost.
@@ -73,44 +74,130 @@ public class CoinScreen {
 	private void eventHandler() {
 		btnHeads.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				coinFace = randGen.nextInt(2);
-				
-				switch (coinFace) {
+				coinType = randGen.nextInt(3);
+				switch (coinType) {	// Decides coin type.
+				case 0:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {	// Checks coin face.
 					case 0:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
 						break;
-						
+								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
 						break;
+					}
+					break;
+					
+				case 1:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {
+					case 0:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
+						txtrHeadsOrTails.append("\nYou win!");
+						++wins;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+								
+					case 1:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
+						txtrHeadsOrTails.append("\nYou lose...");
+						++losses;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+					}
+					break;
+						
+				case 2:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {
+					case 0:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
+						txtrHeadsOrTails.append("\nYou win!");
+						++wins;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+								
+					case 1:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
+						txtrHeadsOrTails.append("\nYou lose...");
+						++losses;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+					}
+					break;
 				}
 			}
 		});
 		
 		btnTails.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				coinFace = randGen.nextInt(2);
-				
-				switch (coinFace) {
+				coinType = randGen.nextInt(3);
+				switch (coinType) {	// Decides coin type.
+				case 0:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {	// Checks coin face.
 					case 0:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
 						break;
-						
+							
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
 						break;
+					}
+					break;
+					
+				case 1:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {
+					case 0:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
+						txtrHeadsOrTails.append("\nYou lose...");
+						++losses;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+							
+					case 1:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
+						txtrHeadsOrTails.append("\nYou win!");
+						++wins;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+					}
+					break;
+						
+				case 2:
+					coinFace = randGen.nextInt(2);
+					switch (coinFace) {
+					case 0:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
+						txtrHeadsOrTails.append("\nYou lose...");
+						++losses;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+							
+						break;
+							
+						
+					case 1:
+						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
+						txtrHeadsOrTails.append("\nYou win!");
+						++wins;
+						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						break;
+					}
+					break;
 				}
 			}
 		});
