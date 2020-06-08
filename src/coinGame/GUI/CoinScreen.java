@@ -1,7 +1,7 @@
 /**
  * Coin-toss game with win-loss ratio and multiple coins.
  * @author Natalie Williams
- * @version 1.7
+ * @version 1.8
  */
 package coinGame.GUI;
 
@@ -42,6 +42,7 @@ public class CoinScreen {
 	private JButton btnTails;
 	private JTextArea txtrHeadsOrTails;
 	private JLabel lblCoin;
+	private JButton btnEndRound;
 
 	/**
 	 * Launch the application.
@@ -85,38 +86,12 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
@@ -128,38 +103,12 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
@@ -171,38 +120,12 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
@@ -221,38 +144,12 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 							
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
@@ -264,38 +161,12 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 							
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
@@ -307,44 +178,41 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
-							
-						break;
-							
+						break;	
 						
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
-						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
-						totalRounds = wins + losses;
-						winLossRatio = wins/totalRounds;
-						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
-						if (winLossRatio <= 0.25) {
-							txtrHeadsOrTails.append(", are you sure you're ok?");
-						}
-						else if (winLossRatio < 0.75) {
-							txtrHeadsOrTails.append(" Average"); 
-						}
-						else {
-							txtrHeadsOrTails.append(" Incredible!");
-						}
 						break;
 					}
 					break;
 				}
+			}
+		});
+		
+		btnEndRound.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+				totalRounds = wins + losses;
+				if (totalRounds == 0) {
+					totalRounds = 1;
+				}
+				winLossRatio = wins/totalRounds;
+				txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+				if (winLossRatio <= 0.25) {
+					txtrHeadsOrTails.append(", are you sure you're ok?");
+				}
+				else if (winLossRatio < 0.75) {
+					txtrHeadsOrTails.append(" Average"); 
+				}
+				else {
+					txtrHeadsOrTails.append(" Incredible!");
+				}
+				
+				totalRounds = 0;
+				wins = 0;
+				losses = 0;
 			}
 		});
 	}
@@ -372,33 +240,40 @@ public class CoinScreen {
 		JPanel pnlCoinView = new JPanel();
 		pnlCoinView.setBackground(Color.BLACK);
 		pnlCoinView.setBorder(new EtchedBorder(EtchedBorder.LOWERED, null, null));
+		
+		btnEndRound = new JButton("End Round");
+		
+		
 		GroupLayout groupLayout = new GroupLayout(frmCoinGame.getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addContainerGap()
-					.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 893, Short.MAX_VALUE)
+					.addComponent(scrollPane, GroupLayout.DEFAULT_SIZE, 901, Short.MAX_VALUE)
 					.addContainerGap())
 				.addGroup(groupLayout.createSequentialGroup()
 					.addGap(116)
 					.addComponent(btnHeads, GroupLayout.PREFERRED_SIZE, 146, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.RELATED, 386, Short.MAX_VALUE)
+					.addGap(148)
+					.addComponent(btnEndRound)
+					.addPreferredGap(ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
 					.addComponent(btnTails, GroupLayout.PREFERRED_SIZE, 149, GroupLayout.PREFERRED_SIZE)
 					.addGap(120))
 				.addGroup(groupLayout.createSequentialGroup()
 					.addContainerGap()
-					.addComponent(pnlCoinView, GroupLayout.DEFAULT_SIZE, 893, Short.MAX_VALUE)
+					.addComponent(pnlCoinView, GroupLayout.DEFAULT_SIZE, 901, Short.MAX_VALUE)
 					.addContainerGap())
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.TRAILING)
 				.addGroup(groupLayout.createSequentialGroup()
 					.addContainerGap()
-					.addComponent(pnlCoinView, GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
+					.addComponent(pnlCoinView, GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
 					.addGap(66)
 					.addGroup(groupLayout.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnHeads)
-						.addComponent(btnTails))
+						.addComponent(btnTails)
+						.addComponent(btnEndRound))
 					.addGap(18)
 					.addComponent(scrollPane, GroupLayout.PREFERRED_SIZE, 229, GroupLayout.PREFERRED_SIZE)
 					.addContainerGap())
