@@ -1,7 +1,7 @@
 /**
  * Coin-toss game with win-loss ratio and multiple coins.
  * @author Natalie Williams
- * @version 1.6
+ * @version 1.7
  */
 package coinGame.GUI;
 
@@ -89,6 +89,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 								
 					case 1:
@@ -99,6 +108,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
@@ -114,6 +132,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 								
 					case 1:
@@ -124,6 +151,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
@@ -139,6 +175,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 								
 					case 1:
@@ -149,6 +194,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
@@ -171,6 +225,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 							
 					case 1:
@@ -181,6 +244,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
@@ -196,6 +268,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 							
 					case 1:
@@ -206,6 +287,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
@@ -221,6 +311,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 							
 						break;
 							
@@ -233,6 +332,15 @@ public class CoinScreen {
 						totalRounds = wins + losses;
 						winLossRatio = wins/totalRounds;
 						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
+						if (winLossRatio <= 0.25) {
+							txtrHeadsOrTails.append(", are you sure you're ok?");
+						}
+						else if (winLossRatio < 0.75) {
+							txtrHeadsOrTails.append(" Average"); 
+						}
+						else {
+							txtrHeadsOrTails.append(" Incredible!");
+						}
 						break;
 					}
 					break;
