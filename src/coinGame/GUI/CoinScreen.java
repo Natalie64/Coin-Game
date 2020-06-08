@@ -1,7 +1,7 @@
 /**
- * Coin-toss game with win-loss count and multiple coins.
+ * Coin-toss game with win-loss ratio and multiple coins.
  * @author Natalie Williams
- * @version 1.5
+ * @version 1.6
  */
 package coinGame.GUI;
 
@@ -34,6 +34,8 @@ public class CoinScreen {
 	private int coinFace;	// Which face is facing up. 0 = Heads 1 = Tails
 	private int wins = 0;	// Number of times the player won.
 	private int losses = 0;	// Number of times the player lost.
+	private double totalRounds = 0.0;	// Total number of rounds played.
+	private double winLossRatio = 1.0;	// Win/Loss ratio as a decimal.
 
 	private JFrame frmCoinGame;
 	private JButton btnHeads;
@@ -84,6 +86,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 								
 					case 1:
@@ -91,6 +96,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
@@ -103,6 +111,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 								
 					case 1:
@@ -110,6 +121,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
@@ -122,6 +136,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 								
 					case 1:
@@ -129,6 +146,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
@@ -148,6 +168,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 							
 					case 1:
@@ -155,6 +178,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
@@ -167,6 +193,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 							
 					case 1:
@@ -174,6 +203,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
@@ -186,6 +218,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 							
 						break;
 							
@@ -195,6 +230,9 @@ public class CoinScreen {
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
 						txtrHeadsOrTails.append("\nWins = " + wins + " Losses = " + losses);
+						totalRounds = wins + losses;
+						winLossRatio = wins/totalRounds;
+						txtrHeadsOrTails.append("\nWin/Loss ratio is %" + (winLossRatio * 100));
 						break;
 					}
 					break;
