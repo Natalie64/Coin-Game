@@ -36,6 +36,8 @@ public class CoinScreen {
 	private int losses = 0;	// Number of times the player lost.
 	private double totalRounds = 0.0;	// Total number of rounds played.
 	private double winLossRatio = 1.0;	// Win/Loss ratio as a decimal.
+	private int heads = 0;	// Records the number of times the coin lands on heads.
+	private int tails = 0;	// Records the number of times the coin lands on tails.
 
 	private JFrame frmCoinGame;
 	private JButton btnHeads;
@@ -86,12 +88,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++heads;
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++tails;
 						break;
 					}
 					break;
@@ -103,12 +107,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++heads;
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++tails;
 						break;
 					}
 					break;
@@ -120,12 +126,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++heads;
 						break;
 								
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++tails;
 						break;
 					}
 					break;
@@ -144,12 +152,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++heads;
 						break;
 							
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 1 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++tails;
 						break;
 					}
 					break;
@@ -161,12 +171,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++heads;
 						break;
 							
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 2 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++tails;
 						break;
 					}
 					break;
@@ -178,12 +190,14 @@ public class CoinScreen {
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Heads.jpg")));
 						txtrHeadsOrTails.append("\nYou lose...");
 						++losses;
+						++heads;
 						break;	
 						
 					case 1:
 						lblCoin.setIcon(new ImageIcon(CoinScreen.class.getResource("/CoinGame/Images/Coin 3 Tails.jpg")));
 						txtrHeadsOrTails.append("\nYou win!");
 						++wins;
+						++tails;
 						break;
 					}
 					break;
@@ -210,9 +224,23 @@ public class CoinScreen {
 					txtrHeadsOrTails.append(" Incredible!");
 				}
 				
+				txtrHeadsOrTails.append("\nNumber of times the coin landed on heads = " + heads);
+				txtrHeadsOrTails.append("\nNumber of times the coin landed on tails = " + tails);
+				if (heads > tails) {
+					txtrHeadsOrTails.append("\nIt would seem that your lucky side is heads.");
+				}
+				else if (heads < tails) {
+					txtrHeadsOrTails.append("\nIt would seem that your lucky side is tails.");
+				}
+				else if (heads == tails) {
+					txtrHeadsOrTails.append("\nYour luck is perfectly balanced,\nyou'll have an equal chance of wining for whatever side you pick."); 
+				}
+				
 				totalRounds = 0;
 				wins = 0;
 				losses = 0;
+				heads = 0;
+				tails = 0;
 			}
 		});
 	}
